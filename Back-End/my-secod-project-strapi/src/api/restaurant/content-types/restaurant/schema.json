@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "singularName": "restaurant",
+    "pluralName": "restaurants",
+    "displayName": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "MetaDescription": {
+      "type": "text"
+    },
+    "Keywords": {
+      "type": "text"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "restaurants"
+    },
+    "href": {
+      "type": "text"
+    },
+    "formulaires": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::formulaire.formulaire",
+      "mappedBy": "reservation"
+    }
+  }
+}

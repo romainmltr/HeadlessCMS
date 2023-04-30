@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_body_paragraphs",
+  "info": {
+    "displayName": "Paragraph"
+  },
+  "options": {},
+  "attributes": {
+    "Paragraph": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

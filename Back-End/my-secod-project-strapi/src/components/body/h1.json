@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_body_h1s",
+  "info": {
+    "displayName": "h1",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "H1": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slug": {
+      "type": "string"
+    },
+    "restaurants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::restaurant.restaurant",
+      "mappedBy": "page"
+    },
+    "H1": {
+      "type": "dynamiczone",
+      "components": [
+        "body.h1"
+      ],
+      "required": true
+    },
+    "H2": {
+      "type": "dynamiczone",
+      "components": [
+        "body.h2"
+      ],
+      "required": true
+    },
+    "Paragraph": {
+      "type": "dynamiczone",
+      "components": [
+        "body.paragraph"
+      ],
+      "required": true
+    },
+    "Picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "formulaire": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formulaire.formulaire"
+    }
+  }
+}

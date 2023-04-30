@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "navabars",
+  "info": {
+    "singularName": "navabar",
+    "pluralName": "navabars",
+    "displayName": "Navbar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "navbar.link"
+      ],
+      "required": true
+    }
+  }
+}
